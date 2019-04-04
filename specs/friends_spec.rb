@@ -111,11 +111,17 @@ end
     result = remove_friend(@person1, "Fred")
     assert_equal(friend_array_length - 1, result)
   end
-  
+
 
 
   # 6. Find the total of everyone's money
   # (hint: use the @people array, remember how we checked the total number of eggs yesterday?)
+
+  def test_total_amount_of_everyones_money
+    result = add_together_everyones_money(@people)
+    assert_equal(143, result)
+  end
+
 
 
   # 7. For two given people, allow the first person to loan a given value of money to the other
